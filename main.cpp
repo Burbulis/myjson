@@ -3,10 +3,10 @@
 #include "scope.hpp"
 int main(int argc,char *argv[])
 {
-Scope::StartTokens_c ss_('{');
-Scope::EndTokens_c se_('}');
+Scope::Token_c ss_('{');
+Scope::Token_c se_('}');
 
- Scope::Detector<Scope::StartTokens_c,Scope::EndTokens_c> scope_(ss_,se_);
+ Scope::Detector<Scope::Token_c,Scope::Token_c> scope_(ss_,se_);
 
  //Scope::Scope<Scope::StartTokens_c,Scope::EndTokens_c> scope_('{','}');
  /* FILE *f = fopen(argv[1],"r+");
@@ -21,7 +21,8 @@ Scope::EndTokens_c se_('}');
   {
     std::string test_;
     std::getline(is,test_);
-    printf("is=%s\n",test_.c_str());
+
+    printf(":scope_test:%d",scope_.find(test_));
 
   }
 
