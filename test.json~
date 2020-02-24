@@ -1,0 +1,22 @@
+#test is this!
+{
+    "hello": "Hello World!",
+    "my contacts": {
+    "phone": "222-333-3333",
+    "email": "test@mail.ru"
+    },
+    "employees": [
+    { "id":1100,
+      "name": "John",
+      "contacts":[
+	"email1@mail.ru",
+	"email2@mail.ru"
+	]
+    },
+    {
+      "id":1100,
+      "name": "Konstantin"
+      "contacts":null
+    }
+    ]
+}

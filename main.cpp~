@@ -7,7 +7,7 @@ Scope::Token_c ss_('{');
 Scope::Token_c se_('}');
 
 Scope::Token_c vs_('"');
-Scope::Token_c ve_('"');
+Scope::Token_c ve_(':');
 
 
  //Scope::Detector<Scope::Token_c,Scope::Token_c> Object_scope_(ss_,se_);
@@ -24,7 +24,7 @@ Scope::Token_c ve_('"');
 
    // if (Object_scope_.find(test_))
    // {    
-      printf(":value_test:%zd:[%s]\n",Value_scope_.find(test_),test_.c_str());
+      printf(":value_test:%d:[%s]\n",static_cast<int>(Value_scope_.find(test_)),test_.c_str());
    // }
   }
 
