@@ -53,11 +53,23 @@ struct Token
     return (pos_!=std::string::npos);
       
     }
+
+  bool 
+  block_find(const std::string& Seq_,size_t next_pos_)
+  {
+    pos_ = Seq_.find(Value,next_pos_);
+    printf("[%c]",Value);
+    return (pos_!=std::string::npos);
+      
+    }
+
   
     size_t get_pos(void)const{
  //   	printf("pos_ = %d",static_cast<int>(pos_));
 		return (pos_);    
     }
+    
+    
     
 
  private:
@@ -73,13 +85,14 @@ typedef Token<char> Token_c;
 
 template
 <
-  typename TScopeStart,
-  typename TScopeEnd
+  typename t_TokenStart,
+  typename t_TokenEnd,
+  typename t_TokenPair
 >
 struct Detector
 {
- Detector(const TScopeStart& lvalue,const TScopeEnd& rvalue):
- _ss(lvalue),_se(rvalue)
+ Detector(const t_TokenStart& lvalue,const t_TokenEnd& rvalue,t_TokenPair tp):
+ _ss(lvalue),_se(rvalue),_tp(tp)
  {}
  
 
@@ -108,8 +121,9 @@ struct Detector
   find(const std::string& Seq_)
   {
     
-    bool end_block   = _se.block_find(Seq_)  ;
-    bool start_block  = _ss.block_find(Seq_) ;
+    bool start_block  = _ss.block_find(Seq_) ;   
+    bool end_block   =  _se.block_find(Seq_,_ss.get_pos()+1)  ;
+    bool _delimiter_token = _tp.block_find(Seq_,_se.get_pos());
     bool all_block = (end_block && start_block);
 	 std::string result_;    
     if (all_block)
@@ -117,10 +131,12 @@ struct Detector
       printf("pos_ss = %zd",_ss.get_pos());
       printf("pos_se = %zd",_se.get_pos());
       size_t lenghth =  _se.get_pos() - _ss.get_pos() ;
-      result_ = Seq_.substr( _ss.get_pos()+1,lenghth-2 );
+      result_ = Seq_.substr( _ss.get_pos()+1,lenghth-1 );
       s_jblock[result_] = std::unique_ptr< json_struct>(new json_struct);      
       printf("Seq_ = ![%s]! :%zd\r\n",result_.c_str(),lenghth);
     }
+    std::string x = Seq_.substr( _tp.get_pos()+1 );  
+    printf("x = [%s]\n",x.c_str());
     printf("==keys_count=%zd",s_jblock.size());
     std::map<std::string,std::unique_ptr<json_struct> >::iterator begin = s_jblock.begin();
     std::map<std::string,std::unique_ptr<json_struct> >::iterator end = s_jblock.end();
@@ -140,8 +156,9 @@ struct Detector
   private:
   std::map<std::string,std::unique_ptr<json_struct> > s_jblock;
 
-  TScopeStart _ss;
-  TScopeEnd   _se;
+  t_TokenStart _ss;
+  t_TokenEnd   _se;
+  t_TokenPair  _tp;
 };
 
 }

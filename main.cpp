@@ -8,10 +8,10 @@ Scope::Token_c se_('}');
 
 Scope::Token_c vs_('"');
 Scope::Token_c ve_('"');
-
+Scope::Token_c vp_(':');
 
  //Scope::Detector<Scope::Token_c,Scope::Token_c> Object_scope_(ss_,se_);
- Scope::Detector<Scope::Token_c,Scope::Token_c> Value_scope_(vs_,ve_);
+ Scope::Detector<Scope::Token_c,Scope::Token_c,Scope::Token_c> Value_scope_(vs_,ve_,vp_);
  
 
   std::ifstream is(argv[1]);
