@@ -136,9 +136,9 @@ struct Detector
       printf("Seq_ = ![%s]! :%zd\r\n",result_.c_str(),lenghth);
     }
     if (_tp.get_pos()!=std::string::npos){
-    std::string x = Seq_.substr( _tp.get_pos() );  
-    printf("x = [%s]\n",x.c_str());}
-    printf("==keys_count=%zd",s_jblock.size());
+    std::string x = Seq_.substr( _tp.get_pos()+1 );  
+    printf("_tp.get_pos()=%zd,x = [%s]\n",_tp.get_pos()+1,x.c_str());}
+/*    printf("==keys_count=%zd",s_jblock.size());
     std::map<std::string,std::unique_ptr<json_struct> >::iterator begin = s_jblock.begin();
     std::map<std::string,std::unique_ptr<json_struct> >::iterator end = s_jblock.end();
     printf("===============================================================\n");
@@ -146,7 +146,7 @@ struct Detector
     {
 		printf("map_key=%s\n",begin->first.c_str());
  		++begin;    
-    }
+    }*/
      return ((start_block)&&(end_block));    
   }
   
