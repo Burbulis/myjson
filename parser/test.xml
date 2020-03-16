@@ -1,0 +1,48 @@
+###TID###42
+###TID_END###
+###THREADS###
+1
+###THREADS_END###
+###TIMEOUT_SEND_RECV###
+500
+###TIMEOUT_SEND_RECV_END###
+###SLEEP###
+800
+###SLEEP_END###
+###MX_CACHE###
+yes
+###MX_CACHE_END###
+###REPORT_FREQUENCY###
+5000
+###REPORT_FREQUENCY_END###
+###LETTER_FORMAT###
+text
+###LETTER_FORMAT_END###
+###CHARSET###
+win1251
+###CHARSET_END###
+###BODY###------=_NextPart_000_000A_01C7B9DF.F2376270Content-Type: text/plain;	charset="iso-8859-1"Content-Transfer-Encoding: quoted-printabletest------=_NextPart_000_000A_01C7B9DF.F2376270###BODY_END######BODY###------=_NextPart_000_000A_01C7B9DF.F2376270Content-Type: text/plain;	charset="iso-8859-1"Content-Transfer-Encoding: quoted-printabletest------=_NextPart_000_000A_01C7B9DF.F2376270###BODY_END######HEADER###From:To:Subject: Date:MIME-Version: 1.0Content-Type: multipart/alternative;	boundary="----=_NextPart_000_000A_01C7B9DF.F2376270"X-Priority: 3X-MSMail-Priority: NormalX-Unsent: 1X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000This is a multi-part message in MIME format.###HEADER_END######MAIL_FROM###
+ourcompanyc@mail.ru
+ourcompanyc@mail.ru
+ourcompanyc@mail.ru
+###MAIL_FROM_END###
+###MAIL_TO###
+ourcompanya@mail.ru/1
+ourcompanyb@mail.ru/2
+ourcompanyc@mail.ru/3
+###MAIL_TO_END###
+###SMTP###
+yahoo.co.uk/smtp.mail.yahoo.co.uk/25/sammycastillo47/HxxHLhwL/sammycastillo47@yahoo.co.uk/STLS
+yahoo.co.uk/smtp.mail.yahoo.co.uk/25/hebert_gonzalo/WIkuHi1V/hebert_gonzalo@yahoo.co.uk
+yahoo.co.uk/smtp.mail.yahoo.co.uk/25/kevinluna45/2paKKmRV/kevinluna45@yahoo.co.uk/STLS
+yahoo.co.uk/smtp.mail.yahoo.co.uk/25/weaver_fran/VT5HrzNG/weaver_fran@yahoo.co.uk
+###SMTP_END###
+
+###RANDOMIZATION_LEVEL###
+12
+###RANDOMIZATION_LEVEL_END###
+###BODY_MAIL_MACROS###
+DBG
+
+111
+###END_BODY_MAIL_MACROS###
