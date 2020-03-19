@@ -29,11 +29,16 @@ int main(int argc,char *argv[])
   
   
   Scope::pair_min_max mm_ = Parse::_xX(o_count_seq,c_count_seq);
-  std::vector<Scope::_block_object > _seq_obj;	
-  std::vector<Scope::_block_object > _seq;
+   printf("min->ep=%zd\n",mm_.min);  
+   printf("max->ep=%zd\n",mm_.max);
+ 
+   std::vector<Scope::_block_object > _seq;
   
-  _seq.push_back((Scope::_block_object(mm_.min,mm_.max)));
+   
+   std::vector<Scope::_block_object > _seq_obj;	 
   _seq_obj.push_back((Scope::_block_object(mm_.min,mm_.max)));
+  _seq.push_back((Scope::_block_object(mm_.min,mm_.max)));
+  
   for (size_t i=0;i < o_count_seq.size();++i)
   {	
 	for (size_t j=0;j < c_count_seq.size();++j)  
@@ -51,8 +56,8 @@ int main(int argc,char *argv[])
     {	
   		printf("sp:%zd,ep:%zd\n",_seq[i].start_pos,_seq[i].end_pos);
     }   
-    std::vector<Scope::_block_object >::iterator min = std::min_element(_seq.begin(),_seq.end());
-    printf("min->ep=%zd\n",min->end_pos);
+   std::vector<Scope::_block_object >::iterator min = std::min_element(_seq.begin(),_seq.end());
+    
     size_t count = 0;//std::count(c_count_seq.begin(),c_count_seq.end(),min->end_pos);
    
     for (size_t i=0;i < _seq.size();++i)
@@ -67,24 +72,40 @@ int main(int argc,char *argv[])
 	 	
 	  while(true)
 	  {
-	    mm_ = Parse::_xX(o_count_seq,c_count_seq);
-		 	printf("min=%zd,max=%zd\n",mm_.min,mm_.max);		  
+	     mm_ = Parse::_xX(o_count_seq,c_count_seq);
+		  printf("min=%zd,max=%zd\n",mm_.min,mm_.max);		  
 		
 		_seq_obj.push_back(Scope::_block_object(mm_.min,mm_.max));	
        if (o_count_seq.empty()&&o_count_seq.empty())	
 		 {  
-		 	printf("_seq_obj.size()=%zd\n",_seq_obj.size());
-  			for (size_t j=0;j < _seq_obj.size();++j)  
-        	{
-        		printf("o_count= %zd,c_count=%zd\n", _seq_obj[j].start_pos,_seq_obj[j].end_pos);
-	     	}      		 
-  		   printf("Is_Empty\n");
+		   printf("Is_Empty\n");
          break;  	   
   	    }
   	  }
+
      
   }
-  
+{
+	    mm_ = Parse::_xX(o_count_seq,c_count_seq);
+		 	printf("min=%zd,max=%zd\n",mm_.min,mm_.max);		  
+
+		 	printf("_seq.size()=%zd\n",_seq.size());
+  			for (size_t j=0;j < _seq.size();++j)  
+        	{
+        		printf("o_count= %zd,c_count=%zd\n", _seq[j].start_pos,_seq[j].end_pos);
+	     	}      		 
+	  blockread_ BlockRead(argv[1],100);
+     std::vector<char> Buffer;
+     Buffer.resize(BlockRead.size()); 	
+     BlockRead.get(Buffer,BlockRead.size());
+	  printf("*************************************************************\n");
+	   printf("start_pos = %zd, end_pos=%zd\n",_seq[2].start_pos,_seq[2].end_pos); 
+	  for (size_t i=_seq[2].start_pos;i<=_seq[2].end_pos;++i)	
+	  {
+       printf("%c",Buffer[i]);	  
+	  }	
+	  printf("*************************************************************\n");
+ } 
   std::vector<size_t> b_o_count_seq;
   std::vector<size_t> b_c_count_seq;
   std::vector<size_t> b_d_count_seq;
@@ -94,13 +115,11 @@ int main(int argc,char *argv[])
 
   Parse::preparate_x(argv[1],_bxtk,b_o_count_seq,b_d_count_seq,b_c_count_seq);
   
- // printf("b_o_count_seq.sz=%zd\n",b_o_count_seq.size());
- // printf("b_d_count_seq.sz=%zd\n",b_d_count_seq.size());
- // printf("b_c_count_seq.sz=%zd\n",b_c_count_seq.size());
    blockread_ BlockRead(argv[1],100);
    std::vector<char> Buffer;
    Buffer.resize(BlockRead.size()); 	
    BlockRead.get(Buffer,BlockRead.size());
+
    printf("Buffer.sz=%zd\n",Buffer.size()); 		
 	for (size_t i = 0;i<b_o_count_seq.size();++i) 
 	{

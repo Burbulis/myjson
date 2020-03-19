@@ -45,13 +45,32 @@ o_count_seq[0]=0,c_count_seq[0]=349
 o_count_seq[1]=151,c_count_seq[1]=567
 o_count_seq[2]=356,c_count_seq[2]=820
 o_count_seq[3]=574,c_count_seq[3]=826
+min->ep=0
+max->ep=826
 **total_seq_count=4**
 sp:0,ep:826
 sp:151,ep:349
 sp:356,ep:567
 sp:574,ep:820
-min->ep=349
 counter=1
+min=151,max=820
+_seq.size()=4
+o_count= 0,c_count=826
+o_count= 151,c_count=349
+o_count= 356,c_count=567
+o_count= 574,c_count=820
+*************************************************************
+start_pos = 356, end_pos=567
+{
+      "name": "Madame Uppercut",
+      "age": 39,
+      "secretIdentity": "Jane Wilson",
+      "powers": [
+        "Million tonne punch",
+        "Damage resistance",
+        "Superhuman reflexes"
+      ]
+    }*************************************************************
 variable block detector started..
 {
    fs |4"squadName fc |14"dlm |15:  fs |17"Super hero squad fc |34",
