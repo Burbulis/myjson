@@ -1,153 +1,128 @@
-object detector started..
-0{
-  "squadName": "Super hero squad",
-  "homeTown": "Metro City",
-  "formed": 2016,
-  "secretBase": "Super tower",
-  "active": true,
-  "members": [
-    151{
-      "name": "Molecule Man",
-      "age": 29,
-      "secretIdentity": "Dan Jukes",
-      "powers": [
-        "Radiation resistance",
-        "Turning tiny",
-        "Radiation blast"
-      ]
-    349},
-    356{
-      "name": "Madame Uppercut",
-      "age": 39,
-      "secretIdentity": "Jane Wilson",
-      "powers": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ]
-    567},
-    574{
-      "name": "Eternal Flame",
-      "age": 1000000,
-      "secretIdentity": "Unknown",
-      "powers": [
-        "Immortality",
-        "Heat Immunity",
-        "Inferno",
-        "Teleportation",
-        "Interdimensional travel"
-      ]
-    820}
-  ]
-826}[o_count=4]
-[c_count=4]
-o_count_seq[0]=0,c_count_seq[0]=349
-o_count_seq[1]=151,c_count_seq[1]=567
-o_count_seq[2]=356,c_count_seq[2]=820
-o_count_seq[3]=574,c_count_seq[3]=826
-min->ep=0
-max->ep=826
-**total_seq_count=4**
-sp:0,ep:826
-sp:151,ep:349
-sp:356,ep:567
-sp:574,ep:820
-counter=1
-min=151,max=820
-_seq.size()=4
-o_count= 0,c_count=826
-o_count= 151,c_count=349
-o_count= 356,c_count=567
-o_count= 574,c_count=820
-*************************************************************
-start_pos = 356, end_pos=567
-{
-      "name": "Madame Uppercut",
-      "age": 39,
-      "secretIdentity": "Jane Wilson",
-      "powers": [
-        "Million tonne punch",
-        "Damage resistance",
-        "Superhuman reflexes"
-      ]
-    }*************************************************************
 variable block detector started..
 {
-   fs |4"squadName fc |14"dlm |15:  fs |17"Super hero squad fc |34",
-   fs |39"homeTown fc |48"dlm |49:  fs |51"Metro City fc |62",
-   fs |67"formed fc |74"dlm |75: 2016,
-   fs |85"secretBase fc |96"dlm |97:  fs |99"Super tower fc |111",
-   fs |116"active fc |123"dlm |124: true,
+   fs |4"squadName fc |14"dlm |15:  fs |17"Super hero squad fc |34" fv |35,
+   fs |39"homeTown fc |48"dlm |49:  fs |51"Metro City fc |62" fv |63,
+   fs |67"formed fc |74"dlm |75: 2016 fv |81,
+   fs |85"secretBase fc |96"dlm |97:  fs |99"Super tower fc |111" fv |112,
+   fs |116"active fc |123"dlm |124: true fv |130,
    fs |134"members fc |142"dlm |143: [
     {
-       fs |159"name fc |164"dlm |165:  fs |167"Molecule Man fc |180",
-       fs |189"age fc |193"dlm |194: 29,
-       fs |206"secretIdentity fc |221"dlm |222:  fs |224"Dan Jukes fc |234",
+       fs |159"name fc |164"dlm |165:  fs |167"Molecule Man fc |180" fv |181,
+       fs |189"age fc |193"dlm |194: 29 fv |198,
+       fs |206"secretIdentity fc |221"dlm |222:  fs |224"Dan Jukes fc |234" fv |235,
        fs |243"powers fc |250"dlm |251: [
-         fs |263"Radiation resistance fc |284",
-         fs |295"Turning tiny fc |308",
+         fs |263"Radiation resistance fc |284" fv |285,
+         fs |295"Turning tiny fc |308" fv |309,
          fs |319"Radiation blast fc |335"
       ]
-    },
+    } fv |350,
     {
-       fs |364"name fc |369"dlm |370:  fs |372"Madame Uppercut fc |388",
-       fs |397"age fc |401"dlm |402: 39,
-       fs |414"secretIdentity fc |429"dlm |430:  fs |432"Jane Wilson fc |444",
+       fs |364"name fc |369"dlm |370:  fs |372"Madame Uppercut fc |388" fv |389,
+       fs |397"age fc |401"dlm |402: 39 fv |406,
+       fs |414"secretIdentity fc |429"dlm |430:  fs |432"Jane Wilson fc |444" fv |445,
        fs |453"powers fc |460"dlm |461: [
-         fs |473"Million tonne punch fc |493",
-         fs |504"Damage resistance fc |522",
+         fs |473"Million tonne punch fc |493" fv |494,
+         fs |504"Damage resistance fc |522" fv |523,
          fs |533"Superhuman reflexes fc |553"
       ]
-    },
+    } fv |568,
     {
-       fs |582"name fc |587"dlm |588:  fs |590"Eternal Flame fc |604",
-       fs |613"age fc |617"dlm |618: 1000000,
-       fs |635"secretIdentity fc |650"dlm |651:  fs |653"Unknown fc |661",
+       fs |582"name fc |587"dlm |588:  fs |590"Eternal Flame fc |604" fv |605,
+       fs |613"age fc |617"dlm |618: 1000000 fv |627,
+       fs |635"secretIdentity fc |650"dlm |651:  fs |653"Unknown fc |661" fv |662,
        fs |670"powers fc |677"dlm |678: [
-         fs |690"Immortality fc |702",
-         fs |713"Heat Immunity fc |727",
-         fs |738"Inferno fc |746",
-         fs |757"Teleportation fc |771",
+         fs |690"Immortality fc |702" fv |703,
+         fs |713"Heat Immunity fc |727" fv |728,
+         fs |738"Inferno fc |746" fv |747,
+         fs |757"Teleportation fc |771" fv |772,
          fs |782"Interdimensional travel fc |806"
       ]
     }
   ]
 }Buffer.sz=827
-str = "squadName
-str = "Super hero squad
-str = "homeTown
-str = "Metro City
-str = "formed
-str = "secretBase
-str = "Super tower
-str = "active
-str = "members
-str = "name
-str = "Molecule Man
-str = "age
-str = "secretIdentity
-str = "Dan Jukes
-str = "powers
-str = "Radiation resistance
-str = "Turning tiny
-str = "Radiation blast
-str = "name
-str = "Madame Uppercut
-str = "age
-str = "secretIdentity
-str = "Jane Wilson
-str = "powers
-str = "Million tonne punch
-str = "Damage resistance
-str = "Superhuman reflexes
-str = "name
-str = "Eternal Flame
-str = "age
-str = "secretIdentity
-str = "Unknown
-str = "powers
-str = "Immortality
-str = "Heat Immunity
-str = "Inferno
-str = "Teleportation
-str = "Interdimensional travel
+b_o_count_seq.sz=38,
+ b_d_count_seq.sz=18,
+ b_f_count_seq.sz=24
+current = 4, next=34, test = 15 , obj=14
+current = 39, next=62, test = 49 , obj=48
+current = 67, next=96, test = 75 , obj=74
+current = 85, next=111, test = 97 , obj=96
+current = 116, next=142, test = 124 , obj=123
+current = 134, next=164, test = 143 , obj=142
+current = 159, next=180, test = 165 , obj=164
+current = 189, next=221, test = 194 , obj=193
+current = 206, next=234, test = 222 , obj=221
+current = 243, next=284, test = 251 , obj=250
+current = 364, next=388, test = 370 , obj=369
+current = 397, next=429, test = 402 , obj=401
+current = 414, next=444, test = 430 , obj=429
+current = 453, next=493, test = 461 , obj=460
+current = 582, next=604, test = 588 , obj=587
+current = 613, next=650, test = 618 , obj=617
+current = 635, next=661, test = 651 , obj=650
+current = 670, next=702, test = 678 , obj=677
+obj.sz=18
+obj_seq_[i].name =squadName
+obj_seq_[i].name =homeTown
+obj_seq_[i].name =formed
+obj_seq_[i].name =secretBase
+obj_seq_[i].name =active
+obj_seq_[i].name =members
+obj_seq_[i].name =name
+obj_seq_[i].name =age
+obj_seq_[i].name =secretIdentity
+obj_seq_[i].name =powers
+obj_seq_[i].name =name
+obj_seq_[i].name =age
+obj_seq_[i].name =secretIdentity
+obj_seq_[i].name =powers
+obj_seq_[i].name =name
+obj_seq_[i].name =age
+obj_seq_[i].name =secretIdentity
+obj_seq_[i].name =powers
+{
+  "squadName": "Super hero squad",
+  "homeTown": "Metro City",
+  "formed": 2016,
+  "secretBase": "Super tower",
+  "active": true,
+  "members": 145[
+    {
+      "name": "Molecule Man",
+      "age": 29,
+      "secretIdentity": "Dan Jukes",
+      "powers": 253[
+        "Radiation resistance",
+        "Turning tiny",
+        "Radiation blast"
+      343]
+    },
+    {
+      "name": "Madame Uppercut",
+      "age": 39,
+      "secretIdentity": "Jane Wilson",
+      "powers": 463[
+        "Million tonne punch",
+        "Damage resistance",
+        "Superhuman reflexes"
+      561]
+    },
+    {
+      "name": "Eternal Flame",
+      "age": 1000000,
+      "secretIdentity": "Unknown",
+      "powers": 680[
+        "Immortality",
+        "Heat Immunity",
+        "Inferno",
+        "Teleportation",
+        "Interdimensional travel"
+      814]
+    }
+  824]
+}[o_count=4]
+[c_count=4]
+o_count_seq[0]=145,c_count_seq[0]=343
+o_count_seq[1]=253,c_count_seq[1]=561
+o_count_seq[2]=463,c_count_seq[2]=814
+o_count_seq[3]=680,c_count_seq[3]=824

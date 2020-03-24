@@ -13,7 +13,9 @@ preparate_x(
  	Scope::_token<char> xtk,
  	std::vector<size_t>& o_count_seq,
  	std::vector<size_t>& d_count_seq,
- 	std::vector<size_t>& c_count_seq)
+ 	std::vector<size_t>& c_count_seq,
+ 	std::vector<size_t>& f_count_seq
+ 	)
 {
   std::vector<char> buffer; 
   blockread_ BlockRead(FileName.c_str(),100); 
@@ -31,11 +33,11 @@ preparate_x(
       {
       	if (!first_)
       	{
-        first_=true;	
-        printf(" fs |%zd",count_);
-		  o_count_seq.push_back(count_);    
-        f_count = count_;
-	}
+           first_=true;	
+           printf(" fs |%zd",count_);
+		     o_count_seq.push_back(count_);    
+           f_count = count_;
+	      }
       }
 
       if (buffer[i]==xtk._delimiter)
@@ -43,7 +45,6 @@ preparate_x(
         printf("dlm |%zd",count_);
 		  d_count_seq.push_back(count_);     
       }
-
 
       if (buffer[i]==xtk._end)
       {
@@ -57,9 +58,20 @@ preparate_x(
 			 }
 		  }     
       }
-	   printf("%c",buffer[i]);	     
-      ++count_;
-    }
+      
+
+      if (buffer[i]==xtk._fin_val)
+      {
+      	if (!first_)
+      	{   
+           printf(" fv |%zd",count_);
+	        f_count_seq.push_back(count_);
+	      }
+		}    
+			   printf("%c",buffer[i]);	   
+++count_;    
+    }         
+      
     if (!go)
       break;
   }
@@ -104,24 +116,22 @@ preparate_x(
 
 //typedef   s_pair_mm;
 
-Scope::pair_min_max
+Scope::Obj_
 _xX(
  std::vector<size_t>& o_count_seq,
  std::vector<size_t>& c_count_seq
 )
 {
-  Scope::pair_min_max min_max_;	
+  Scope::Obj_ obj_;	
   std::vector<std::unique_ptr<Scope::_block_object> > seq_;
   std::vector<size_t>::iterator max = std::max_element(c_count_seq.begin(),c_count_seq.end());
- // printf("max=%zd\n",(*max));
   std::vector<size_t>::iterator min = std::min_element(o_count_seq.begin(),o_count_seq.end());
- // printf("min=%zd\n",(*min));
   seq_.push_back( std::unique_ptr<Scope::_block_object>(new Scope::_block_object( (*min) , (*max) )));
-	min_max_.min = (*min);
-	min_max_.max = (*max);
+	obj_.start = (*min);
+	obj_.end = (*max);
   o_count_seq.erase(min);
   c_count_seq.erase(max); 
-  return (min_max_);
+  return (obj_);
 }
 
 

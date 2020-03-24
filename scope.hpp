@@ -1,5 +1,6 @@
 #include <memory>
 #include <vector>
+#include <string>
 #include <map>
 
 #ifndef __SCOPE__
@@ -7,10 +8,12 @@
 namespace Scope
 {
 
-	struct pair_min_max
+
+	struct Obj_
 	{
-  		size_t min;
-  		size_t max;
+  		size_t start;
+  		size_t end;
+  		std::string name;
 	};
 
 template<
@@ -21,10 +24,11 @@ struct _token
 	T _start;
 	T _delimiter;
 	T _end;
+	T _fin_val;
 	
 	_token(T st,T et ):_start(st),_end(et)
 	{};
-	_token(T st,T dt,T et ):_start(st),_delimiter(dt),_end(et)
+	_token(T st,T dt,T et,T ft):_start(st),_delimiter(dt),_end(et),_fin_val(ft)
 	{};
 	
 	~_token(){};
@@ -52,12 +56,14 @@ struct _block_object
 	_block_object(
 					  size_t s_p,
 					  size_t d_p,
-					  size_t e_p
+					  size_t e_p,
+					  size_t f_p
 					  )
 	{
 		start_pos = s_p;
 		delim_pos = d_p;
-		end_pos = e_p;
+		end_pos   = e_p;
+		fin_pos   = f_p;
 	}
 
 	bool
@@ -82,6 +88,7 @@ struct _block_object
 	size_t start_pos;
 	size_t delim_pos;	
 	size_t end_pos;
+	size_t fin_pos;
 };	
 
 

@@ -13,7 +13,9 @@ preparate_x(
  	Scope::_token<char> xtk,
  	std::vector<size_t>& o_count_seq,
  	std::vector<size_t>& d_count_seq,
- 	std::vector<size_t>& c_count_seq)
+ 	std::vector<size_t>& c_count_seq,
+ 	std::vector<size_t>& f_count_seq
+ 	)
 {
   std::vector<char> buffer; 
   blockread_ BlockRead(FileName.c_str(),100); 
@@ -31,11 +33,11 @@ preparate_x(
       {
       	if (!first_)
       	{
-        first_=true;	
-        printf(" fs |%zd",count_);
-		  o_count_seq.push_back(count_);    
-        f_count = count_;
-	}
+           first_=true;	
+           printf(" fs |%zd",count_);
+		     o_count_seq.push_back(count_);    
+           f_count = count_;
+	      }
       }
 
       if (buffer[i]==xtk._delimiter)
@@ -43,7 +45,6 @@ preparate_x(
         printf("dlm |%zd",count_);
 		  d_count_seq.push_back(count_);     
       }
-
 
       if (buffer[i]==xtk._end)
       {
@@ -57,9 +58,20 @@ preparate_x(
 			 }
 		  }     
       }
-	   printf("%c",buffer[i]);	     
-      ++count_;
-    }
+      
+
+      if (buffer[i]==xtk._fin_val)
+      {
+      	if (!first_)
+      	{   
+           printf(" fv |%zd",count_);
+	        f_count_seq.push_back(count_);
+	      }
+		}    
+			   printf("%c",buffer[i]);	   
+++count_;    
+    }         
+      
     if (!go)
       break;
   }
@@ -110,7 +122,7 @@ _xX(
  std::vector<size_t>& c_count_seq
 )
 {
-  s_pair_mm min_max_;	
+  Scope::pair_min_max min_max_;	
   std::vector<std::unique_ptr<Scope::_block_object> > seq_;
   std::vector<size_t>::iterator max = std::max_element(c_count_seq.begin(),c_count_seq.end());
  // printf("max=%zd\n",(*max));
