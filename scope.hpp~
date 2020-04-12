@@ -1,17 +1,24 @@
 #include <memory>
 #include <vector>
+#include <string>
 #include <map>
 
 #ifndef __SCOPE__
 #define __SCOPE__
 namespace Scope
 {
-
-
-	struct pair_min_max
+	enum STATE
 	{
-  		size_t min;
-  		size_t max;
+ 		START,
+		DELIMITER,
+		END	
+	};
+
+	struct Obj_
+	{
+  		size_t start;
+  		size_t end;
+  		std::string name;
 	};
 
 template<

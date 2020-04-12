@@ -7,7 +7,12 @@
 #define __SCOPE__
 namespace Scope
 {
-
+	enum STATE
+	{
+ 		START,
+		DELIMITER,
+		END	
+	};
 
 	struct Obj_
 	{

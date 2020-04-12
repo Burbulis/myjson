@@ -5,7 +5,8 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-
+namespace file
+{
   class blockread_
   {
     FILE *f;
@@ -93,6 +94,7 @@
 	{
 		return (total_sz);
 	}	    
+   
     
 	 void get(std::vector<char>& Buffer)
 	 {
@@ -110,5 +112,33 @@
     {
 		fclose(f);
     }
- };
+ };}
+namespace mem
+{
+ class blockread_
+ {
+   size_t size_b;//block size;
+   std::vector<char> _buffer;	
+	size_t _counter;    
+   size_t total_sz;
+   
+   void
+	add(const std::vector<char>& buffer)
+	{
+		if (buffer.empty())
+		  return ;
+		  
+		_buffer.insert(_buffer.begin(),buffer.begin(),buffer.end());
+	}	   
+
+	
+   public:
+    blockread_()
+    {}
+ 	
+ 
+ };} 
+ 
+ 
+ 
 #endif

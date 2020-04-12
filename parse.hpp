@@ -1,15 +1,94 @@
+#ifndef __PARSER__
+#define __PARSER__
 #include <fstream>      // std::ifstream
 #include "scope.hpp"
 #include "bread.hpp"
-#ifndef __PARSER__
-#define __PARSER__
 
 namespace Parse
 {
 
+
+template
+<
+ typename T
+>
+unsigned int
+finalize_token_pos
+(
+   T& BlockRead, 
+   Scope::_token<char> xtk
+)
+/*	START,
+		DELIMITER,
+		END	
+*/
+{
+	std::vector<char> buffer; 
+	 bool go =false;
+ do
+  {
+ 	 go =BlockRead.next();
+    BlockRead.get(buffer);
+    for (size_t i=0;i<buffer.size();++i)
+    {
+       if (buffer[i]==xtk._start)
+       {
+			printf("i[start] = [%zd]\n",i);
+			return(Scope::STATE::START);       
+       }
+       if (buffer[i]==xtk._delimiter)
+       {
+			printf("i[delimiter] = [%zd]\n",i);
+			return(Scope::STATE::DELIMITER);       
+
+       }      
+       
+       if (buffer[i]==xtk._end)
+       {
+			printf("i[end] = [%zd]\n",i);
+   		return(Scope::STATE::END);       
+       }
+
+    }
+    if (!go)
+      break;
+  }
+  while ( true );
+
+} 
+
+
+template 
+<
+  typename T1,
+  typename T2
+>
+void create_seq(std::vector< T1 >& _seq,
+const std::vector< T2 >& o_count_seq_i,
+const std::vector< T2 >& c_count_seq_i
+ )
+{
+ for (size_t i=0;i < o_count_seq_i.size();++i)
+   {	
+   for (size_t j=0;j < c_count_seq_i.size();++j)  
+     {
+ 	    if (o_count_seq_i[i] < c_count_seq_i[j])
+        { 	
+  	       _seq.push_back(Scope::_block_object(o_count_seq_i[i],c_count_seq_i[j]));
+		    break;     
+        } 
+     }  	
+   }
+   return ;
+ }
+
+template
+<
+ typename T
+ >
 void
 preparate_x(
-	std::string FileName,
+   T& BlockRead, 
  	Scope::_token<char> xtk,
  	std::vector<size_t>& o_count_seq,
  	std::vector<size_t>& d_count_seq,
@@ -18,7 +97,6 @@ preparate_x(
  	)
 {
   std::vector<char> buffer; 
-  blockread_ BlockRead(FileName.c_str(),100); 
   bool go =false;
   size_t f_count = 0;
   size_t count_ = 0;
@@ -59,7 +137,7 @@ preparate_x(
 		  }     
       }
       
-
+	
       if (buffer[i]==xtk._fin_val)
       {
       	if (!first_)
@@ -78,15 +156,19 @@ preparate_x(
   while ( true );
 }
 
+template
+<
+ typename t_blockread_
+>
 void
 preparate_x(
-	std::string FileName,
+	t_blockread_& BlockRead,
  	Scope::_token<char> xtk,
  	std::vector<size_t>& o_count_seq,
  	std::vector<size_t>& c_count_seq)
 {
   std::vector<char> buffer; 
-  blockread_ BlockRead(FileName.c_str(),100); 
+
   bool go =false;
   size_t count_ = 0;
   do

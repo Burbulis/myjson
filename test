@@ -39,90 +39,1019 @@ variable block detector started..
       ]
     }
   ]
-}Buffer.sz=827
-b_o_count_seq.sz=38,
- b_d_count_seq.sz=18,
- b_f_count_seq.sz=24
-current = 4, next=34, test = 15 , obj=14
-current = 39, next=62, test = 49 , obj=48
-current = 67, next=96, test = 75 , obj=74
-current = 85, next=111, test = 97 , obj=96
-current = 116, next=142, test = 124 , obj=123
-current = 134, next=164, test = 143 , obj=142
-current = 159, next=180, test = 165 , obj=164
-current = 189, next=221, test = 194 , obj=193
-current = 206, next=234, test = 222 , obj=221
-current = 243, next=284, test = 251 , obj=250
-current = 364, next=388, test = 370 , obj=369
-current = 397, next=429, test = 402 , obj=401
-current = 414, next=444, test = 430 , obj=429
-current = 453, next=493, test = 461 , obj=460
-current = 582, next=604, test = 588 , obj=587
-current = 613, next=650, test = 618 , obj=617
-current = 635, next=661, test = 651 , obj=650
-current = 670, next=702, test = 678 , obj=677
-obj.sz=18
-obj_seq_[i].name =squadName
-obj_seq_[i].name =homeTown
-obj_seq_[i].name =formed
-obj_seq_[i].name =secretBase
-obj_seq_[i].name =active
-obj_seq_[i].name =members
-obj_seq_[i].name =name
-obj_seq_[i].name =age
-obj_seq_[i].name =secretIdentity
-obj_seq_[i].name =powers
-obj_seq_[i].name =name
-obj_seq_[i].name =age
-obj_seq_[i].name =secretIdentity
-obj_seq_[i].name =powers
-obj_seq_[i].name =name
-obj_seq_[i].name =age
-obj_seq_[i].name =secretIdentity
-obj_seq_[i].name =powers
-{
+}0{
   "squadName": "Super hero squad",
   "homeTown": "Metro City",
   "formed": 2016,
   "secretBase": "Super tower",
   "active": true,
-  "members": 145[
-    {
+  "members": [
+    151{
       "name": "Molecule Man",
       "age": 29,
       "secretIdentity": "Dan Jukes",
-      "powers": 253[
+      "powers": [
         "Radiation resistance",
         "Turning tiny",
         "Radiation blast"
-      343]
-    },
-    {
+      ]
+    349},
+    356{
       "name": "Madame Uppercut",
       "age": 39,
       "secretIdentity": "Jane Wilson",
-      "powers": 463[
+      "powers": [
         "Million tonne punch",
         "Damage resistance",
         "Superhuman reflexes"
-      561]
-    },
-    {
+      ]
+    567},
+    574{
       "name": "Eternal Flame",
       "age": 1000000,
       "secretIdentity": "Unknown",
-      "powers": 680[
+      "powers": [
         "Immortality",
         "Heat Immunity",
         "Inferno",
         "Teleportation",
         "Interdimensional travel"
-      814]
-    }
-  824]
-}[o_count=4]
-[c_count=4]
-o_count_seq[0]=145,c_count_seq[0]=343
-o_count_seq[1]=253,c_count_seq[1]=561
-o_count_seq[2]=463,c_count_seq[2]=814
-o_count_seq[3]=680,c_count_seq[3]=824
+      ]
+    820}
+  ]
+826}_seq.size()=4
+i[end] = [14]
+STATE:2
+Buffer.sz=827
+Buffer.sz=827
+b_o_count_seq.sz=38,
+ b_c_count_seq.sz=38,
+ b_d_count_seq.sz=18,
+ b_f_count_seq.sz=24
+b_o_count_seq[0] = 4
+b_c_count_seq[0] = 14
+b_o_count_seq[1] = 17
+b_c_count_seq[1] = 34
+b_o_count_seq[2] = 39
+b_c_count_seq[2] = 48
+b_o_count_seq[3] = 51
+b_c_count_seq[3] = 62
+b_o_count_seq[4] = 67
+b_c_count_seq[4] = 74
+b_o_count_seq[5] = 85
+b_c_count_seq[5] = 96
+b_o_count_seq[6] = 99
+b_c_count_seq[6] = 111
+b_o_count_seq[7] = 116
+b_c_count_seq[7] = 123
+b_o_count_seq[8] = 134
+b_c_count_seq[8] = 142
+b_o_count_seq[9] = 159
+b_c_count_seq[9] = 164
+b_o_count_seq[10] = 167
+b_c_count_seq[10] = 180
+b_o_count_seq[11] = 189
+b_c_count_seq[11] = 193
+b_o_count_seq[12] = 206
+b_c_count_seq[12] = 221
+b_o_count_seq[13] = 224
+b_c_count_seq[13] = 234
+b_o_count_seq[14] = 243
+b_c_count_seq[14] = 250
+b_o_count_seq[15] = 263
+b_c_count_seq[15] = 284
+b_o_count_seq[16] = 295
+b_c_count_seq[16] = 308
+b_o_count_seq[17] = 319
+b_c_count_seq[17] = 335
+b_o_count_seq[18] = 364
+b_c_count_seq[18] = 369
+b_o_count_seq[19] = 372
+b_c_count_seq[19] = 388
+b_o_count_seq[20] = 397
+b_c_count_seq[20] = 401
+b_o_count_seq[21] = 414
+b_c_count_seq[21] = 429
+b_o_count_seq[22] = 432
+b_c_count_seq[22] = 444
+b_o_count_seq[23] = 453
+b_c_count_seq[23] = 460
+b_o_count_seq[24] = 473
+b_c_count_seq[24] = 493
+b_o_count_seq[25] = 504
+b_c_count_seq[25] = 522
+b_o_count_seq[26] = 533
+b_c_count_seq[26] = 553
+b_o_count_seq[27] = 582
+b_c_count_seq[27] = 587
+b_o_count_seq[28] = 590
+b_c_count_seq[28] = 604
+b_o_count_seq[29] = 613
+b_c_count_seq[29] = 617
+b_o_count_seq[30] = 635
+b_c_count_seq[30] = 650
+b_o_count_seq[31] = 653
+b_c_count_seq[31] = 661
+b_o_count_seq[32] = 670
+b_c_count_seq[32] = 677
+b_o_count_seq[33] = 690
+b_c_count_seq[33] = 702
+b_o_count_seq[34] = 713
+b_c_count_seq[34] = 727
+b_o_count_seq[35] = 738
+b_c_count_seq[35] = 746
+b_o_count_seq[36] = 757
+b_c_count_seq[36] = 771
+b_o_count_seq[37] = 782
+b_c_count_seq[37] = 806
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=1
+obj_seq_[0].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=2
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=3
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=4
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=5
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=6
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=7
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=8
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=9
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=10
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+obj_seq_[9].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=11
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+obj_seq_[9].name =[Super hero squad] : squadName
+obj_seq_[10].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=12
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+obj_seq_[9].name =[Super hero squad] : squadName
+obj_seq_[10].name =[Super hero squad] : squadName
+obj_seq_[11].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=13
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+obj_seq_[9].name =[Super hero squad] : squadName
+obj_seq_[10].name =[Super hero squad] : squadName
+obj_seq_[11].name =[Super hero squad] : squadName
+obj_seq_[12].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=14
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+obj_seq_[9].name =[Super hero squad] : squadName
+obj_seq_[10].name =[Super hero squad] : squadName
+obj_seq_[11].name =[Super hero squad] : squadName
+obj_seq_[12].name =[Super hero squad] : squadName
+obj_seq_[13].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=15
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+obj_seq_[9].name =[Super hero squad] : squadName
+obj_seq_[10].name =[Super hero squad] : squadName
+obj_seq_[11].name =[Super hero squad] : squadName
+obj_seq_[12].name =[Super hero squad] : squadName
+obj_seq_[13].name =[Super hero squad] : squadName
+obj_seq_[14].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=16
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+obj_seq_[9].name =[Super hero squad] : squadName
+obj_seq_[10].name =[Super hero squad] : squadName
+obj_seq_[11].name =[Super hero squad] : squadName
+obj_seq_[12].name =[Super hero squad] : squadName
+obj_seq_[13].name =[Super hero squad] : squadName
+obj_seq_[14].name =[Super hero squad] : squadName
+obj_seq_[15].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=17
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+obj_seq_[9].name =[Super hero squad] : squadName
+obj_seq_[10].name =[Super hero squad] : squadName
+obj_seq_[11].name =[Super hero squad] : squadName
+obj_seq_[12].name =[Super hero squad] : squadName
+obj_seq_[13].name =[Super hero squad] : squadName
+obj_seq_[14].name =[Super hero squad] : squadName
+obj_seq_[15].name =[Super hero squad] : squadName
+obj_seq_[16].name =[Super hero squad] : squadName
+current = 14 , delim_=15 ,next=34
+start = 4, end=14, next = 34 , obj=17
+current = 34 , delim_=49 ,next=48
+current = 48 , delim_=75 ,next=62
+current = 62 , delim_=97 ,next=74
+current = 74 , delim_=124 ,next=96
+current = 96 , delim_=143 ,next=111
+current = 111 , delim_=165 ,next=123
+current = 123 , delim_=194 ,next=142
+current = 142 , delim_=222 ,next=164
+current = 164 , delim_=251 ,next=180
+current = 180 , delim_=370 ,next=193
+current = 193 , delim_=402 ,next=221
+current = 221 , delim_=430 ,next=234
+current = 234 , delim_=461 ,next=250
+current = 250 , delim_=588 ,next=284
+current = 284 , delim_=618 ,next=308
+current = 308 , delim_=651 ,next=335
+current = 335 , delim_=678 ,next=369
+current = 369 , delim_=0 ,next=388
+current = 388 , delim_=0 ,next=401
+current = 401 , delim_=0 ,next=429
+current = 429 , delim_=0 ,next=444
+current = 444 , delim_=0 ,next=460
+current = 460 , delim_=0 ,next=493
+current = 493 , delim_=0 ,next=522
+current = 522 , delim_=0 ,next=553
+current = 553 , delim_=0 ,next=587
+current = 587 , delim_=0 ,next=604
+current = 604 , delim_=0 ,next=617
+current = 617 , delim_=0 ,next=650
+current = 650 , delim_=0 ,next=661
+current = 661 , delim_=0 ,next=677
+current = 677 , delim_=0 ,next=702
+current = 702 , delim_=529 ,next=727
+current = 727 , delim_=4 ,next=746
+current = 746 , delim_=17 ,next=771
+current = 771 , delim_=39 ,next=806
+current = 806 , delim_=51 ,next=0
+obj.sz=18
+obj_seq_[0].name =[Super hero squad] : squadName
+obj_seq_[1].name =[Super hero squad] : squadName
+obj_seq_[2].name =[Super hero squad] : squadName
+obj_seq_[3].name =[Super hero squad] : squadName
+obj_seq_[4].name =[Super hero squad] : squadName
+obj_seq_[5].name =[Super hero squad] : squadName
+obj_seq_[6].name =[Super hero squad] : squadName
+obj_seq_[7].name =[Super hero squad] : squadName
+obj_seq_[8].name =[Super hero squad] : squadName
+obj_seq_[9].name =[Super hero squad] : squadName
+obj_seq_[10].name =[Super hero squad] : squadName
+obj_seq_[11].name =[Super hero squad] : squadName
+obj_seq_[12].name =[Super hero squad] : squadName
+obj_seq_[13].name =[Super hero squad] : squadName
+obj_seq_[14].name =[Super hero squad] : squadName
+obj_seq_[15].name =[Super hero squad] : squadName
+obj_seq_[16].name =[Super hero squad] : squadName
+obj_seq_[17].name =[Super hero squad] : squadName
