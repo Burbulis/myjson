@@ -1,6 +1,8 @@
-{
+"starter":{
     "hello": "Hello World!",
     "my contacts": {
+	"id":1000,
+	"name":"Vasily Pupkin"
 	"phone": "222-333-3333",
 	"email": "test@mail.ru"
     },
@@ -8,8 +10,8 @@
 	    "id": 1100,
 	    "name": "John",
 	    "contacts": [
-		"email1@mail.ru",
-		"email2@mail.ru"
+	    "email1@mail.ru",
+	    "email2@mail.ru"
 	    ]
 	},
 	{
