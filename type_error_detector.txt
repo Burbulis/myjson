@@ -1,0 +1,83 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+enum
+{FLOAT,SIZE_T,UNSIGNED_INT,UNSIGNED_CHAR,INT,CHAR,UNSIGNED_LONG,LONG};
+
+
+template
+< 
+typename T
+>
+struct DetectType
+{
+  enum{TYPE = LONG};     
+};
+
+template<>
+struct DetectType<char>
+{
+  enum{TYPE = CHAR};     
+};
+
+template<>
+struct DetectType<unsigned char>
+{
+  enum{TYPE = UNSIGNED_CHAR};     
+};
+
+
+template<>
+struct DetectType<int>
+{
+  enum{TYPE = INT};     
+};
+
+
+template<>
+struct DetectType<size_t>
+{
+  enum{TYPE = SIZE_T};     
+};
+
+template<>
+struct DetectType<unsigned int>
+{
+  enum{TYPE = UNSIGNED_INT};     
+};
+
+template
+<
+  typename T,
+  int t_detector
+>
+struct
+TYPE_TESTER
+{
+  static bool result_;
+};
+
+template
+<
+  typename T,
+  int t_detector
+>
+bool TYPE_TESTER<T,t_detector>::result_ = (DetectType<T>::TYPE == t_detector);
+
+
+int main()
+
+{
+    printf("test == %d\n",TYPE_TESTER<size_t,SIZE_T>::result_);;
+   
+    return 0;
+}
