@@ -1,0 +1,92 @@
+#include <iostream>
+#include <stdio.h>
+
+template
+<
+  typename T
+>
+struct
+LEFT
+{
+
+LEFT(const T& t_):t(t_){}    
+
+template
+<typename TT>    
+friend bool operator == (const LEFT<TT>& larg,const LEFT<TT>& rarg);
+//
+template
+<typename TT>    
+friend bool operator != (const LEFT<TT>& larg,const LEFT<TT>& rarg);
+//
+template
+<typename TT>
+friend bool operator == (const LEFT<TT>& larg,TT rarg);
+//
+~LEFT(){}
+//
+const T t;    
+private:
+//
+template
+<typename TT>
+const TT&  operator = (const TT& rarg){return (rarg);}
+};
+
+template
+<typename TT>
+bool
+operator == (const LEFT<TT>& larg,const LEFT<TT>& rarg)
+{
+    return (larg.t == rarg.t);
+}
+
+template
+<typename TT>
+bool
+operator == (const LEFT<TT>& larg,TT rarg)
+{
+  return (larg.t == rarg);
+}
+
+
+
+template
+<
+  typename TT
+>
+bool
+operator != (const LEFT<TT>& larg,const LEFT<TT>& rarg)
+{
+    return (!(larg.t == rarg.t));
+}
+
+
+//template< typename T > struct Get { const static int Size = sizeof( T ); };
+//template< typename TT > struct Get< const TT > { const static int Size = 0; };
+
+template< typename T > struct regulator { 
+    typedef T type; 
+    typedef const T const_type;
+};
+
+
+// printf("%d\n",lock_if<int>(i)==lock_if<int>(j));
+ //printf("%d\n",DetectType<const int>::TYPE);
+// operator==(i,j);
+
+int main(void)
+{
+    
+ int i = 7; 
+
+ for (int j=0;j<10;++j)
+ {
+   if ( LEFT<int>(j) == i  )
+   {
+     printf ("test=%d",j);
+     break;
+   }
+ }  
+  return (0);  
+}
