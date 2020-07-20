@@ -367,6 +367,15 @@ double measure::times;
 
 template
 <
+  typename iterator_type,
+  typename T
+>
+next(iterator_type& first,iterator_type &last,T &var)
+
+
+
+template
+<
     typename T
 >
 typename T::iterator
