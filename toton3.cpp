@@ -71,99 +71,32 @@ template
     typename T
 >
 typename T::iterator
- search(typename T::iterator beg_,
+ u_search(typename T::iterator beg_,
 	typename T::iterator end_,typename T::value_type value,const size_t sz)
 {
-  size_t count_ = 0;
   typename T::iterator first(beg_);
   typename T::iterator  last(end_);
   typename T::iterator ret(end_);
-  static bool detect = 0; 
  
   do
   {
- //1
-   ret = first;
-   detect = static_cast<unsigned int>(((ret == last)||(*first == value))); 
-   std::advance(first,static_cast<unsigned int>(!detect));
  
-   ret = first;
-   detect = static_cast<unsigned int>(((ret == last)||(*first == value))); 
-   std::advance(first,static_cast<unsigned int>(!detect));
+   ++first;
+   ret = ((ret != last)&&(*first != value))?(++first):first;
+   ret = ((ret != last)&&(*first != value))?(++first):first;
+   ret = ((ret != last)&&(*first != value))?(++first):first;
+   ret = ((ret != last)&&(*first != value))?(++first):first;
+  
 
-   ret = first;
-   detect = static_cast<unsigned int>(((ret == last)||(*first == value))); 
-   std::advance(first,static_cast<unsigned int>(!detect));
- 
-   ret = first;
-   detect = static_cast<unsigned int>(((ret == last)||(*first == value))); 
-   std::advance(first,static_cast<unsigned int>(!detect));
-
-   ret = first;
-   detect = static_cast<unsigned int>(((ret == last)||(*first == value))); 
-   std::advance(first,static_cast<unsigned int>(!detect));
- 
-   ret = first;
-   detect = static_cast<unsigned int>(((ret == last)||(*first == value))); 
-   std::advance(first,static_cast<unsigned int>(!detect));
-
-   ret = first;
-   detect = static_cast<unsigned int>(((ret == last)||(*first == value))); 
-   std::advance(first,static_cast<unsigned int>(!detect));
- 
-   ret = first;
-   detect = static_cast<unsigned int>(((ret == last)||(*first == value))); 
-   std::advance(first,static_cast<unsigned int>(!detect));
-
-
- //2
-/*   ret = first;
-   detect = ((detect!=0)||(ret == last)||(*first == value)); 
-   count_ += (!detect);
-//3   
-   if (!detect) ++first;
-   ret = first;
-   detect = ((detect)||(ret == last)||(*first == value)); 
-   count_ += (!detect);
-//4
-   if (!detect) ++first;
-   ret = first;
-   detect = ((detect)||(ret == last)||(*first == value)); 
-   count_ += (!detect);
-//5
-   if (!detect) ++first;
-   ret = first;
-   detect = ((detect)||(ret == last)||(*first == value)); 
-   count_ += (!detect);
-//6   
-   if (!detect) ++first;
-   ret = first;
-   detect = ((detect)||(ret == last)||(*first == value)); 
-   count_ += (!detect);
-//7
-   if (!detect) ++first;
-   ret = first;
-   detect = ((detect)||(ret == last)||(*first == value)); 
-   count_ += (!detect);
-//8
-   if (!detect) ++first;
-   ret = first;
-   detect = ((detect)||(ret == last)||(*first == value)); 
-   count_ += (!detect);
-   
-   if (!detect) ++first;*/
-   count_ += (!detect);
   }
-  while (( count_ < sz ) && (!detect));
-  printf("count_=%zd\n\n",count_);
- 
+  while ((ret != last)&&(*first != value));
   return (ret);
 }
 
 
 
 
-const size_t counter_ = 50000000;
+const size_t counter_ = 685500000;
 
 const char find_obj = 'z';
 //#define FIND_IF 1
@@ -174,28 +107,32 @@ const char find_obj = 'z';
 //            971844
 //            958274
 //find_if     963310
+typedef std::list<x_token_count> type_seq;
 
 int main ()
 {
-  std::list< x_token_count > xtcs;
+  type_seq xtcs;
+
   for (size_t i = 0;i<counter_;++i)
   {
     xtcs.push_back (x_token_count ('"', i));
   }
+  
   xtcs.push_back (x_token_count ('X', 32020 ));
+  
   for (size_t i = 0;i<counter_;++i)
   {
     xtcs.push_back (x_token_count ('"', i));
   }
 
   printf("total objects = %zd",xtcs.size());
-  std::list < x_token_count >::iterator found = xtcs.end();
+  type_seq::iterator found = xtcs.end();
   {
     measure ms;
     #ifdef FIND_IF
       found = std::find_if(xtcs.begin(),xtcs.end(),find_type<x_token_count>(x_token_count (find_obj, 32020 )));
     #else
-      found = search< std::list< x_token_count > >(xtcs.begin(),xtcs.end(),x_token_count(find_obj,32020),xtcs.size());
+      found = u_search< type_seq >(xtcs.begin(),xtcs.end(),x_token_count(find_obj,32020),xtcs.size());
     #endif
   }
  
