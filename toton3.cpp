@@ -71,22 +71,24 @@ template
     typename T
 >
 typename T::iterator
- u_search(typename T::iterator beg_,
-	typename T::iterator end_,typename T::value_type value,const size_t sz)
+ u_search(typename T::iterator first,
+	typename T::iterator last,typename T::value_type value,const size_t sz)
 {
-  typename T::iterator first(beg_);
-  typename T::iterator  last(end_);
-  typename T::iterator ret(end_);
+
+  typename T::iterator ret(last);
  
   do
   {
- 
    ++first;
    ret = ((ret != last)&&(*first != value))?(++first):first;
    ret = ((ret != last)&&(*first != value))?(++first):first;
    ret = ((ret != last)&&(*first != value))?(++first):first;
    ret = ((ret != last)&&(*first != value))?(++first):first;
-  
+   ret = ((ret != last)&&(*first != value))?(++first):first;
+   ret = ((ret != last)&&(*first != value))?(++first):first;
+   ret = ((ret != last)&&(*first != value))?(++first):first;
+   ret = ((ret != last)&&(*first != value))?(++first):first;
+
 
   }
   while ((ret != last)&&(*first != value));
@@ -95,8 +97,46 @@ typename T::iterator
 
 
 
+template
+<
+typename T
+>
+ typename std::vector<T>::iterator
+ u_search(std::vector<T>& buffer,const T& value)
+{
+  size_t count = 0;
+  size_t index_ = 0;
+  const size_t sz_ = buffer.size(); 
+  typename std::vector<T>::iterator ret = buffer.begin();
+  const T *x_buffer = reinterpret_cast<const T *>(&buffer[0]);
+  do
+  {
 
-const size_t counter_ = 685500000;
+    ++count;   
+
+    index_ = ((count < sz_)&&(x_buffer[count] != value))?(++count):count;
+    index_ = ((count < sz_)&&(x_buffer[count] != value))?(++count):count;
+    index_ = ((count < sz_)&&(x_buffer[count] != value))?(++count):count;
+    index_ = ((count < sz_)&&(x_buffer[count] != value))?(++count):count;
+
+    index_ = ((count < sz_)&&(x_buffer[count] != value))?(++count):count;
+    index_ = ((count < sz_)&&(x_buffer[count] != value))?(++count):count;
+    index_ = ((count < sz_)&&(x_buffer[count] != value))?(++count):count;
+    index_ = ((count < sz_)&&(x_buffer[count] != value))?(++count):count;
+
+  }
+  while ((count < sz_)&&(x_buffer[count] != value));
+
+  std::advance(ret,index_);
+
+  return (ret);
+}
+
+
+
+
+
+const size_t counter_ = 30000000;
 
 const char find_obj = 'z';
 //#define FIND_IF 1
@@ -107,7 +147,7 @@ const char find_obj = 'z';
 //            971844
 //            958274
 //find_if     963310
-typedef std::list<x_token_count> type_seq;
+typedef std::vector<x_token_count> type_seq;
 
 int main ()
 {
@@ -132,7 +172,8 @@ int main ()
     #ifdef FIND_IF
       found = std::find_if(xtcs.begin(),xtcs.end(),find_type<x_token_count>(x_token_count (find_obj, 32020 )));
     #else
-      found = u_search< type_seq >(xtcs.begin(),xtcs.end(),x_token_count(find_obj,32020),xtcs.size());
+     // found = u_search< type_seq >(xtcs.begin(),xtcs.end(),x_token_count(find_obj,32020),xtcs.size());
+      found = u_search< x_token_count >( xtcs , x_token_count(find_obj, 32020 ) );
     #endif
   }
  
